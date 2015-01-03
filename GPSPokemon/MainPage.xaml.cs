@@ -30,8 +30,11 @@ namespace GPSPokemon
         // rootPage = MainPage.Current;
         public static List<Fence> listOfFences = new List<Fence>();
         public static List<Pokemon> listOfPokemon = new List<Pokemon>();
+        bool inside = false;
         double myX;
         double myY;
+        string type1;
+        string type2;
 
         Geolocator Location;
         public MainPage()
@@ -128,6 +131,7 @@ namespace GPSPokemon
             LongitudeValue.Text = position.Coordinate.Longitude.ToString();
             AccuracyValue.Text = position.Coordinate.Accuracy.ToString();
 
+            checkLocation();
         }
 
         private static void loadFences(JsonArray coordsList)
@@ -206,17 +210,33 @@ namespace GPSPokemon
 
         private void checkLocation()
         {
-            foreach (Fence fence in listOfFences) // Loop through List with foreach.
+            foreach (Fence fence in listOfFences) // Loop through List of foreach
             {
-                insideFence(fence.pointX, fence.pointY);
+                inside = insideFence(fence.pointX, fence.pointY);
+
+                if (inside ==true) //if I am inside a fence, break the forEach loop,
+                {
+                    type1 = fence.type1;//what type of Pokemon can I find
+                    type2 = fence.type2;//what type of Pokemon can I find
+                    break;//break the foreach loop
+                }
+            }
+
+            if (inside == true)//if Im inside a circle
+            {
+             //search for a pokemon
+            }
+            else
+            {
+                //return that no pokemon were found
             }
         }
 
         private Boolean insideFence(string pointX, string pointY)
         {
-            double centerX = Convert.ToDouble(pointX);
-            double centerY = Convert.ToDouble(pointY);
-            double radius = 50; //50 meters
+            double centerX = Convert.ToDouble(pointX);//circle center
+            double centerY = Convert.ToDouble(pointY);//circle center
+            double radius = 50; //50 meters, size of the circle
 
 
             //inside  =   (x - center_x)^2 + (y - center_y)^2 <  radius^2
@@ -235,6 +255,33 @@ namespace GPSPokemon
             {
                 return true;
             }
+        }
+
+        private void pickPokemon()
+        {
+            int counter=0;//count how many matches we get
+
+            Random rnd = new Random();
+            int randNumber = rnd.Next(0,71);//create the limit of matches the counter must reach 1,2,3...68,69,70
+
+            foreach (Pokemon pokemon in listOfPokemon) // Loop through List of Pokemon
+            {
+                if((pokemon.type1 == type1) || (pokemon.type1 == type2) || (pokemon.type2 == type1) || (pokemon.type2 == type2))//if pokemon type is matched
+                {
+                    counter++;
+
+                    if (counter == randNumber)//break out of the foreach loop when the number of possible matches is reached
+                    {
+                        break;
+                    }
+
+                }
+                else
+                {
+
+                }
+            }
+
         }
 
     }
