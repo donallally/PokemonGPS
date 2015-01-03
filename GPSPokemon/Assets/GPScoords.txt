@@ -61,5 +61,12 @@
 "pointY": "-9.011630",
 "Type1" : "Poison",
 "Type2" : "Bug"
+},
+{
+"Name"  : "Home",
+"pointX": "53.376341",
+"pointY": "-8.710719",
+"Type1" : "Poison",
+"Type2" : "Bug"
 }
 ]

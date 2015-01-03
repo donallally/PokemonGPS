@@ -27,27 +27,31 @@
         </DataTemplate>
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <Image x:Name="pokemonPic" Width="300" Height="300" Margin="55,55,1011,416" Source=""/>
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonNumber" Margin="360,50,600,650"  FontSize="36"/>
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonName"   Margin="360,100,600,600" FontSize="36"/>
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonType1"  Margin="360,150,600,550" FontSize="36"/>
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonType2"  Margin="360,200,600,500" FontSize="36"/>
         <StackPanel>
             <TextBlock x:Name="StatusBlock" Grid.Row="6" Margin="0,0,0,5" Grid.ColumnSpan="2" Visibility="Collapsed"/>
-            <StackPanel Orientation="Horizontal" Margin="0,0,921,0">
-                <TextBlock TextWrapping="Wrap" Text="Status: " FontSize="36" Margin="5"></TextBlock>
-                <TextBlock TextWrapping="Wrap" Text="TextBlock" x:Name="StatusValue" Margin="5" FontSize="36"></TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="20,475,921,0">
+                <TextBlock TextWrapping="Wrap" Text="Status: " FontSize="36" Margin="5"/>
+                <TextBlock TextWrapping="Wrap" Text="TextBlock" x:Name="StatusValue" Margin="5" FontSize="36"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0,0,921,0">
-                <TextBlock TextWrapping="Wrap" Text="Longitude: " FontSize="36" Margin="5"></TextBlock>
-                <TextBlock TextWrapping="Wrap" Text="Longitude" x:Name="LongitudeValue" Margin="5" FontSize="36"></TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="20,0,921,0">
+                <TextBlock TextWrapping="Wrap" Text="Longitude: " FontSize="36" Margin="5"/>
+                <TextBlock TextWrapping="Wrap" Text="Longitude" x:Name="LongitudeValue" Margin="5" FontSize="36"/>
             </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0,0,921,0">
-                <TextBlock TextWrapping="Wrap" Text="Latitude: " FontSize="36" Margin="5"></TextBlock>
-                <TextBlock TextWrapping="Wrap" Text="Latitude" x:Name="LatitudeValue" Margin="5" FontSize="36"></TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="20,0,921,0">
+                <TextBlock TextWrapping="Wrap" Text="Latitude: " FontSize="36" Margin="5"/>
+                <TextBlock TextWrapping="Wrap" Text="Latitude" x:Name="LatitudeValue" Margin="5" FontSize="36"/>
             </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0,0,921,0">
-                <TextBlock TextWrapping="Wrap" Text="Accuracy: " FontSize="36" Margin="5"></TextBlock>
-                <TextBlock TextWrapping="Wrap" Text="Accuracy" x:Name="AccuracyValue" Margin="5" FontSize="36"></TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="20,0,921,0">
+                <TextBlock TextWrapping="Wrap" Text="Accuracy: " FontSize="36" Margin="5"/>
+                <TextBlock TextWrapping="Wrap" Text="Accuracy" x:Name="AccuracyValue" Margin="5" FontSize="36"/>
             </StackPanel>
-            <Button Height="50" Width="100" Content="Refresh" Margin="50,0,0,0" Click="Button_Click"/>
+            <Button Height="50" Width="100" Content="Refresh" Margin="70,0,0,0" Click="Button_Click"/>
         </StackPanel>
 
 

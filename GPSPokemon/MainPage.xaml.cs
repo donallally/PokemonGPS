@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -224,15 +225,15 @@ namespace GPSPokemon
 
             if (inside == true)//if Im inside a circle
             {
-             //search for a pokemon
+                pickPokemon();
             }
             else
             {
-                //return that no pokemon were found
+                pokemonName.Text = "None found";
             }
         }
 
-        private Boolean insideFence(string pointX, string pointY)
+        private Boolean insideFence(string pointY, string pointX)
         {
             double centerX = Convert.ToDouble(pointX);//circle center
             double centerY = Convert.ToDouble(pointY);//circle center
@@ -266,19 +267,28 @@ namespace GPSPokemon
 
             foreach (Pokemon pokemon in listOfPokemon) // Loop through List of Pokemon
             {
-                if((pokemon.type1 == type1) || (pokemon.type1 == type2) || (pokemon.type2 == type1) || (pokemon.type2 == type2))//if pokemon type is matched
+                if ((type1.Equals(pokemon.type1)) || (type1.Equals(pokemon.type2)) || (type2.Equals(pokemon.type1)) || (type2.Equals(pokemon.type2)))//if pokemon type is matched
                 {
                     counter++;
 
                     if (counter == randNumber)//break out of the foreach loop when the number of possible matches is reached
                     {
-                        break;
-                    }
+                        pokemonName.Text = pokemon.name;//set the picked pokemon to the main screen
+                        pokemonNumber.Text = pokemon.number;
+                        pokemonType1.Text = pokemon.type1;
+                        pokemonType2.Text = pokemon.type2;
 
+                        //Uri imageUri = new Uri(pokemon.image, UriKind.Relative);
+                        //BitmapImage imageBitmap = new BitmapImage(imageUri);
+                        //Image myImage = new Image();
+                        //pokemonPic.Source = imageBitmap;
+
+                        break;//break out of the foreach loop
+                    }
                 }
                 else
                 {
-
+                    //do nothing
                 }
             }
 
