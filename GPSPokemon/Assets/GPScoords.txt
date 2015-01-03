@@ -1,0 +1,65 @@
+[
+{
+"Name"  : "Gym",
+"pointX": "53.278223",
+"pointY": "-9.012519",
+"Type1" : "Fighting",
+"Type2" : "Normal"
+},
+{
+"Name"  : "Engineering",    
+"pointX": "53.278203",
+"pointY": "-9.009945",
+"Type1" : "Electric",
+"Type2" : "Steel"
+},
+{
+"Name"  : "Marine",
+"pointX": "53.278746",
+"pointY": "-9.009860",
+"Type1" : "Water",
+"Type2" : "Ice"
+},
+{
+"Name"  : "Business",
+"pointX": "53.279249",
+"pointY": "-9.010840",
+"Type1" : "Ground",
+"Type2" : "Psychic"
+},
+{
+"Name"  : "Canteen",
+"pointX": "53.278696",
+"pointY": "-9.010629",
+"Type1" : "Normal",
+"Type2" : "Fire"
+},
+{
+"Name"  : "Front",
+"pointX": "53.277886",
+"pointY": "-9.010660",
+"Type1" : "Flying",
+"Type2" : "Grass"
+},
+{
+"Name"  : "Astro",
+"pointX": "53.277726",
+"pointY": "-9.011772",
+"Type1" : "Ghost",
+"Type2" : "Dragon"
+},
+{
+"Name"  : "Libary",
+"pointX": "53.277670",
+"pointY": "-9.009674",
+"Type1" : "Rock",
+"Type2" : "Bug"
+},
+{
+"Name"  : "Science",
+"pointX": "53.278959",
+"pointY": "-9.011630",
+"Type1" : "Poison",
+"Type2" : "Bug"
+}
+]

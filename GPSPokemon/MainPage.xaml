@@ -7,7 +7,60 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.Resources>
+        <DataTemplate x:Key="ModifiedStandardSmallIcon300x70ItemTemplate">
+            <Grid Width="120" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}" Margin="0,0,0,5" Width="40" Height="40">
+                    <Image Source="{Binding image}" Stretch="UniformToFill"/>
+                </Border>
+                <StackPanel Grid.Column="1" Margin="3,-10,0,0">
+                    <TextBlock Text="{Binding number}" Style="{StaticResource BodyTextBlockStyle}" Foreground="Red"    TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding name}"   Style="{StaticResource BodyTextBlockStyle}" Foreground="Blue"   TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding type1}"  Style="{StaticResource BodyTextBlockStyle}" Foreground="Green"  TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding type2}"  Style="{StaticResource BodyTextBlockStyle}" Foreground="Yellow" TextWrapping="NoWrap"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock x:Name="StatusBlock" Grid.Row="6" Margin="0,0,0,5" Grid.ColumnSpan="2" Visibility="Collapsed"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,921,0">
+                <TextBlock TextWrapping="Wrap" Text="Status: " FontSize="36" Margin="5"></TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="TextBlock" x:Name="StatusValue" Margin="5" FontSize="36"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,921,0">
+                <TextBlock TextWrapping="Wrap" Text="Longitude: " FontSize="36" Margin="5"></TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Longitude" x:Name="LongitudeValue" Margin="5" FontSize="36"></TextBlock>
+            </StackPanel>
 
+            <StackPanel Orientation="Horizontal" Margin="0,0,921,0">
+                <TextBlock TextWrapping="Wrap" Text="Latitude: " FontSize="36" Margin="5"></TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Latitude" x:Name="LatitudeValue" Margin="5" FontSize="36"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,921,0">
+                <TextBlock TextWrapping="Wrap" Text="Accuracy: " FontSize="36" Margin="5"></TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="Accuracy" x:Name="AccuracyValue" Margin="5" FontSize="36"></TextBlock>
+            </StackPanel>
+            <Button Height="50" Width="100" Content="Refresh" Margin="50,0,0,0" Click="Button_Click"/>
+        </StackPanel>
+
+
+        <ScrollViewer Grid.Row="1" Name="ScrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="964,0,0,0">
+            <GridView x:Name="GridViewDogs" Grid.Row="1" ItemTemplate="{StaticResource ModifiedStandardSmallIcon300x70ItemTemplate}" Width="402">
+                <GridView.ItemContainerStyle>
+                    <Style TargetType="Control">
+                        <Setter Property="Height" Value="100" />
+                        <Setter Property="Width" Value="250"/>
+                        <Setter Property="Margin" Value="0,0,30,5" />
+                    </Style>
+                </GridView.ItemContainerStyle>
+            </GridView>
+        </ScrollViewer>
     </Grid>
 </Page>

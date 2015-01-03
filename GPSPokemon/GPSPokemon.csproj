@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{de8daa7d-31e1-4359-8a80-39fe8ca24a81}</ProjectGuid>
+    <ProjectGuid>{DE8DAA7D-31E1-4359-8A80-39FE8CA24A81}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GPSPokemon</RootNamespace>
@@ -14,9 +14,7 @@
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    
     <PackageCertificateKeyFile>GPSPokemon_TemporaryKey.pfx</PackageCertificateKeyFile>
-    
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -110,24 +108,177 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Fence.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pokemon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    
     <None Include="GPSPokemon_TemporaryKey.pfx" />
-    
   </ItemGroup>
   <ItemGroup>
-	<Content Include="Assets\Logo.scale-100.png" />
-	<Content Include="Assets\SmallLogo.scale-100.png" />
-	<Content Include="Assets\SplashScreen.scale-100.png" />
-	<Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\GPScoords.txt" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\pokemon.txt" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="pokemonImages\001.png" />
+    <Content Include="pokemonImages\002.png" />
+    <Content Include="pokemonImages\003.png" />
+    <Content Include="pokemonImages\004.png" />
+    <Content Include="pokemonImages\005.png" />
+    <Content Include="pokemonImages\006.png" />
+    <Content Include="pokemonImages\007.png" />
+    <Content Include="pokemonImages\008.png" />
+    <Content Include="pokemonImages\009.png" />
+    <Content Include="pokemonImages\010.png" />
+    <Content Include="pokemonImages\011.png" />
+    <Content Include="pokemonImages\012.png" />
+    <Content Include="pokemonImages\013.png" />
+    <Content Include="pokemonImages\014.png" />
+    <Content Include="pokemonImages\015.png" />
+    <Content Include="pokemonImages\016.png" />
+    <Content Include="pokemonImages\017.png" />
+    <Content Include="pokemonImages\018.png" />
+    <Content Include="pokemonImages\019.png" />
+    <Content Include="pokemonImages\020.png" />
+    <Content Include="pokemonImages\021.png" />
+    <Content Include="pokemonImages\022.png" />
+    <Content Include="pokemonImages\023.png" />
+    <Content Include="pokemonImages\024.png" />
+    <Content Include="pokemonImages\025.png" />
+    <Content Include="pokemonImages\026.png" />
+    <Content Include="pokemonImages\027.png" />
+    <Content Include="pokemonImages\028.png" />
+    <Content Include="pokemonImages\029.png" />
+    <Content Include="pokemonImages\030.png" />
+    <Content Include="pokemonImages\031.png" />
+    <Content Include="pokemonImages\032.png" />
+    <Content Include="pokemonImages\033.png" />
+    <Content Include="pokemonImages\034.png" />
+    <Content Include="pokemonImages\035.png" />
+    <Content Include="pokemonImages\036.png" />
+    <Content Include="pokemonImages\037.png" />
+    <Content Include="pokemonImages\038.png" />
+    <Content Include="pokemonImages\039.png" />
+    <Content Include="pokemonImages\040.png" />
+    <Content Include="pokemonImages\041.png" />
+    <Content Include="pokemonImages\042.png" />
+    <Content Include="pokemonImages\043.png" />
+    <Content Include="pokemonImages\044.png" />
+    <Content Include="pokemonImages\045.png" />
+    <Content Include="pokemonImages\046.png" />
+    <Content Include="pokemonImages\047.png" />
+    <Content Include="pokemonImages\048.png" />
+    <Content Include="pokemonImages\049.png" />
+    <Content Include="pokemonImages\050.png" />
+    <Content Include="pokemonImages\051.png" />
+    <Content Include="pokemonImages\052.png" />
+    <Content Include="pokemonImages\053.png" />
+    <Content Include="pokemonImages\054.png" />
+    <Content Include="pokemonImages\055.png" />
+    <Content Include="pokemonImages\056.png" />
+    <Content Include="pokemonImages\057.png" />
+    <Content Include="pokemonImages\058.png" />
+    <Content Include="pokemonImages\059.png" />
+    <Content Include="pokemonImages\060.png" />
+    <Content Include="pokemonImages\061.png" />
+    <Content Include="pokemonImages\062.png" />
+    <Content Include="pokemonImages\063.png" />
+    <Content Include="pokemonImages\064.png" />
+    <Content Include="pokemonImages\065.png" />
+    <Content Include="pokemonImages\066.png" />
+    <Content Include="pokemonImages\067.png" />
+    <Content Include="pokemonImages\068.png" />
+    <Content Include="pokemonImages\069.png" />
+    <Content Include="pokemonImages\070.png" />
+    <Content Include="pokemonImages\071.png" />
+    <Content Include="pokemonImages\072.png" />
+    <Content Include="pokemonImages\073.png" />
+    <Content Include="pokemonImages\074.png" />
+    <Content Include="pokemonImages\075.png" />
+    <Content Include="pokemonImages\076.png" />
+    <Content Include="pokemonImages\077.png" />
+    <Content Include="pokemonImages\078.png" />
+    <Content Include="pokemonImages\079.png" />
+    <Content Include="pokemonImages\080.png" />
+    <Content Include="pokemonImages\081.png" />
+    <Content Include="pokemonImages\082.png" />
+    <Content Include="pokemonImages\083.png" />
+    <Content Include="pokemonImages\084.png" />
+    <Content Include="pokemonImages\085.png" />
+    <Content Include="pokemonImages\086.png" />
+    <Content Include="pokemonImages\087.png" />
+    <Content Include="pokemonImages\088.png" />
+    <Content Include="pokemonImages\089.png" />
+    <Content Include="pokemonImages\090.png" />
+    <Content Include="pokemonImages\091.png" />
+    <Content Include="pokemonImages\092.png" />
+    <Content Include="pokemonImages\093.png" />
+    <Content Include="pokemonImages\094.png" />
+    <Content Include="pokemonImages\095.png" />
+    <Content Include="pokemonImages\096.png" />
+    <Content Include="pokemonImages\097.png" />
+    <Content Include="pokemonImages\098.png" />
+    <Content Include="pokemonImages\099.png" />
+    <Content Include="pokemonImages\100.png" />
+    <Content Include="pokemonImages\101.png" />
+    <Content Include="pokemonImages\102.png" />
+    <Content Include="pokemonImages\103.png" />
+    <Content Include="pokemonImages\104.png" />
+    <Content Include="pokemonImages\105.png" />
+    <Content Include="pokemonImages\106.png" />
+    <Content Include="pokemonImages\107.png" />
+    <Content Include="pokemonImages\108.png" />
+    <Content Include="pokemonImages\109.png" />
+    <Content Include="pokemonImages\110.png" />
+    <Content Include="pokemonImages\111.png" />
+    <Content Include="pokemonImages\112.png" />
+    <Content Include="pokemonImages\113.png" />
+    <Content Include="pokemonImages\114.png" />
+    <Content Include="pokemonImages\115.png" />
+    <Content Include="pokemonImages\116.png" />
+    <Content Include="pokemonImages\117.png" />
+    <Content Include="pokemonImages\118.png" />
+    <Content Include="pokemonImages\119.png" />
+    <Content Include="pokemonImages\120.png" />
+    <Content Include="pokemonImages\121.png" />
+    <Content Include="pokemonImages\122.png" />
+    <Content Include="pokemonImages\123.png" />
+    <Content Include="pokemonImages\124.png" />
+    <Content Include="pokemonImages\125.png" />
+    <Content Include="pokemonImages\126.png" />
+    <Content Include="pokemonImages\127.png" />
+    <Content Include="pokemonImages\128.png" />
+    <Content Include="pokemonImages\129.png" />
+    <Content Include="pokemonImages\130.png" />
+    <Content Include="pokemonImages\131.png" />
+    <Content Include="pokemonImages\132.png" />
+    <Content Include="pokemonImages\133.png" />
+    <Content Include="pokemonImages\134.png" />
+    <Content Include="pokemonImages\135.png" />
+    <Content Include="pokemonImages\136.png" />
+    <Content Include="pokemonImages\137.png" />
+    <Content Include="pokemonImages\138.png" />
+    <Content Include="pokemonImages\139.png" />
+    <Content Include="pokemonImages\140.png" />
+    <Content Include="pokemonImages\141.png" />
+    <Content Include="pokemonImages\142.png" />
+    <Content Include="pokemonImages\143.png" />
+    <Content Include="pokemonImages\144.png" />
+    <Content Include="pokemonImages\145.png" />
+    <Content Include="pokemonImages\146.png" />
+    <Content Include="pokemonImages\147.png" />
+    <Content Include="pokemonImages\148.png" />
+    <Content Include="pokemonImages\149.png" />
+    <Content Include="pokemonImages\150.png" />
+    <Content Include="pokemonImages\151.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -139,11 +290,9 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
-
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
