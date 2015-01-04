@@ -21,16 +21,20 @@
                     <TextBlock Text="{Binding number}" Style="{StaticResource BodyTextBlockStyle}" Foreground="Red"    TextWrapping="NoWrap"/>
                     <TextBlock Text="{Binding name}"   Style="{StaticResource BodyTextBlockStyle}" Foreground="Blue"   TextWrapping="NoWrap"/>
                     <TextBlock Text="{Binding type1}"  Style="{StaticResource BodyTextBlockStyle}" Foreground="Green"  TextWrapping="NoWrap"/>
-                    <TextBlock Text="{Binding type2}"  Style="{StaticResource BodyTextBlockStyle}" Foreground="Yellow" TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding type2}"  Style="{StaticResource BodyTextBlockStyle}" Foreground="Green" TextWrapping="NoWrap"/>
                 </StackPanel>
             </Grid>
         </DataTemplate>
     </Page.Resources>
-    <Grid Background="DarkRed">
-        <Canvas Background="Blue" Margin="0,0,882,479" Canvas.ZIndex="0"/>
-        <Canvas Background="Yellow" Margin="964,0,0,0" Canvas.ZIndex="0"/>
+
+    <Grid Background="Black">
+
+        <Image Source="/Assets/pokemonLogo.png" Margin="339,250,311,208" />
+
+        <Canvas Background="Navy" Margin="0,0,882,479" Canvas.ZIndex="0"/>
+        <Canvas Background="Gold" Margin="964,0,0,0" Canvas.ZIndex="0"/>
         <TextBlock TextWrapping="Wrap" x:Name="pokemonNumber" Margin="36,32,924,668"  FontSize="36" />
-        <TextBlock TextWrapping="Wrap" x:Name="pokemonName"   Margin="36,82,924,618" FontSize="36"/>
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonName"   Margin="36,82,924,618"  FontSize="36"/>
         <TextBlock TextWrapping="Wrap" x:Name="pokemonType1"  Margin="36,132,924,568" FontSize="36"/>
         <TextBlock TextWrapping="Wrap" x:Name="pokemonType2"  Margin="36,182,924,518" FontSize="36"/>
         <StackPanel>

@@ -129,6 +129,7 @@
     <Content Include="Assets\GPScoords.txt" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\pokemon.txt" />
+    <Content Include="Assets\pokemonLogo.png" />
     <Content Include="Assets\readMe.txt" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
