@@ -48,10 +48,8 @@
             </StackPanel>
             <Button Height="50" Width="100" Content="Search" Margin="70,0,0,0" Click="Button_Click"/>
         </StackPanel>
-
-
         <ScrollViewer Grid.Row="1" Name="ScrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="964,0,0,0">
-            <GridView x:Name="GridViewDogs" Grid.Row="1" ItemTemplate="{StaticResource ModifiedStandardSmallIcon300x70ItemTemplate}" Width="402">
+            <GridView x:Name="GridViewPokemon" Grid.Row="1" ItemTemplate="{StaticResource ModifiedStandardSmallIcon300x70ItemTemplate}" Width="402">
                 <GridView.ItemContainerStyle>
                     <Style TargetType="Control">
                         <Setter Property="Height" Value="100" />

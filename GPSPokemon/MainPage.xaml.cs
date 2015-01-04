@@ -71,7 +71,7 @@ namespace GPSPokemon
             Location.PositionChanged += Location_PositionChanged;
             //status changed
             Location.StatusChanged += Location_StatusChanged;
-            GridViewDogs.ItemsSource = listOfPokemon;
+            GridViewPokemon.ItemsSource = listOfPokemon;
 
         }
 
@@ -293,6 +293,5 @@ namespace GPSPokemon
             }
 
         }
-
     }
 }
