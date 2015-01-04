@@ -215,7 +215,7 @@ namespace GPSPokemon
             {
                 inside = insideFence(fence.pointX, fence.pointY);
 
-                if (inside ==true) //if I am inside a fence, break the forEach loop,
+                if (inside == true) //if I am inside a fence, break the forEach loop,
                 {
                     type1 = fence.type1;//what type of Pokemon can I find
                     type2 = fence.type2;//what type of Pokemon can I find
@@ -225,11 +225,14 @@ namespace GPSPokemon
 
             if (inside == true)//if Im inside a circle
             {
-                pickPokemon();
+                pickPokemon();//pick a pokemon
             }
-            else
+            else//if I am not in an area then tell the user no pokemon found
             {
                 pokemonName.Text = "None found";
+                pokemonNumber.Text = "None found";
+                pokemonType1.Text = "None found";
+                pokemonType2.Text = "None found";
             }
         }
 
