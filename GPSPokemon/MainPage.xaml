@@ -28,7 +28,7 @@
     </Page.Resources>
     <Grid Background="DarkRed">
         <Canvas Background="Blue" Margin="0,0,882,479" Canvas.ZIndex="0"/>
-        <Canvas Background="Green" Margin="964,0,0,0" Canvas.ZIndex="0"/>
+        <Canvas Background="Yellow" Margin="964,0,0,0" Canvas.ZIndex="0"/>
         <TextBlock TextWrapping="Wrap" x:Name="pokemonNumber" Margin="36,32,924,668"  FontSize="36" />
         <TextBlock TextWrapping="Wrap" x:Name="pokemonName"   Margin="36,82,924,618" FontSize="36"/>
         <TextBlock TextWrapping="Wrap" x:Name="pokemonType1"  Margin="36,132,924,568" FontSize="36"/>
