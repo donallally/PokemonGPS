@@ -26,12 +26,13 @@
             </Grid>
         </DataTemplate>
     </Page.Resources>
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-        <TextBlock TextWrapping="Wrap" x:Name="pokemonNumber" Margin="360,50,600,650"  FontSize="36"/>
-        <TextBlock TextWrapping="Wrap" x:Name="pokemonName"   Margin="360,100,600,600" FontSize="36"/>
-        <TextBlock TextWrapping="Wrap" x:Name="pokemonType1"  Margin="360,150,600,550" FontSize="36"/>
-        <TextBlock TextWrapping="Wrap" x:Name="pokemonType2"  Margin="360,200,600,500" FontSize="36"/>
+    <Grid Background="DarkRed">
+        <Canvas Background="Blue" Margin="0,0,882,479" Canvas.ZIndex="0"/>
+        <Canvas Background="Green" Margin="964,0,0,0" Canvas.ZIndex="0"/>
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonNumber" Margin="36,32,924,668"  FontSize="36" />
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonName"   Margin="36,82,924,618" FontSize="36"/>
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonType1"  Margin="36,132,924,568" FontSize="36"/>
+        <TextBlock TextWrapping="Wrap" x:Name="pokemonType2"  Margin="36,182,924,518" FontSize="36"/>
         <StackPanel>
             <TextBlock x:Name="StatusBlock" Grid.Row="6" Margin="0,0,0,5" Grid.ColumnSpan="2" Visibility="Collapsed"/>
             <StackPanel Orientation="Horizontal" Margin="20,475,921,0">
