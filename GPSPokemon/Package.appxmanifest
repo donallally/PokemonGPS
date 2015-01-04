@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="26047DonalLally.PokemonGPS" Publisher="CN=6911A294-2F8C-4B9E-B9A9-1F35C7489446" Version="1.1.0.2" />
+  <Identity Name="26047DonalLally.PokemonGPS" Publisher="CN=6911A294-2F8C-4B9E-B9A9-1F35C7489446" Version="1.1.0.4" />
   <Properties>
     <DisplayName>Pokemon GPS</DisplayName>
     <PublisherDisplayName>Donal Lally</PublisherDisplayName>
