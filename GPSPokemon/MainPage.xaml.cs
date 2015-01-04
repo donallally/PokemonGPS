@@ -41,8 +41,6 @@ namespace GPSPokemon
         public MainPage()
         {
             this.InitializeComponent();
-            //loadFences();
-
         }
 
         public static async Task LoadLocalData()
@@ -115,6 +113,7 @@ namespace GPSPokemon
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+
             if (Location == null)
             {
                 Location = new Geolocator();
@@ -264,7 +263,7 @@ namespace GPSPokemon
             int counter=0;//count how many matches we get
 
             Random rnd = new Random();
-            int randNumber = rnd.Next(0,71);//create the limit of matches the counter must reach 1,2,3...68,69,70
+            int randNumber = rnd.Next(0,31);//create the limit of matches the counter must reach 1,2,3...68,69,70
 
             foreach (Pokemon pokemon in listOfPokemon) // Loop through List of Pokemon
             {

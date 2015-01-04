@@ -47,7 +47,7 @@
                 <TextBlock TextWrapping="Wrap" Text="Latitude: " FontSize="36" Margin="5"/>
                 <TextBlock TextWrapping="Wrap" Text="Latitude" x:Name="LatitudeValue" Margin="5" FontSize="36"/>
             </StackPanel>
-            <Button Height="50" Width="100" Content="Refresh" Margin="70,0,0,0" Click="Button_Click"/>
+            <Button Height="50" Width="100" Content="Search" Margin="70,0,0,0" Click="Button_Click"/>
         </StackPanel>
 
 
