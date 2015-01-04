@@ -36,7 +36,7 @@
         <StackPanel>
             <TextBlock x:Name="StatusBlock" Grid.Row="6" Margin="0,0,0,5" Grid.ColumnSpan="2" Visibility="Collapsed"/>
             <StackPanel Orientation="Horizontal" Margin="20,475,921,0">
-                <TextBlock TextWrapping="Wrap" Text="Status: " FontSize="36" Margin="5"/>
+                <TextBlock TextWrapping="Wrap" Text="GPS: " FontSize="36" Margin="5"/>
                 <TextBlock TextWrapping="Wrap" Text="TextBlock" x:Name="StatusValue" Margin="5" FontSize="36"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="20,0,921,0">
@@ -46,10 +46,6 @@
             <StackPanel Orientation="Horizontal" Margin="20,0,921,0">
                 <TextBlock TextWrapping="Wrap" Text="Latitude: " FontSize="36" Margin="5"/>
                 <TextBlock TextWrapping="Wrap" Text="Latitude" x:Name="LatitudeValue" Margin="5" FontSize="36"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="20,0,921,0">
-                <TextBlock TextWrapping="Wrap" Text="Accuracy: " FontSize="36" Margin="5"/>
-                <TextBlock TextWrapping="Wrap" Text="Accuracy" x:Name="AccuracyValue" Margin="5" FontSize="36"/>
             </StackPanel>
             <Button Height="50" Width="100" Content="Refresh" Margin="70,0,0,0" Click="Button_Click"/>
         </StackPanel>

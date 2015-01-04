@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="1fbfe7fb-1fc4-4597-bd12-5a5dd41fd5d4" Publisher="CN=Donal" Version="1.0.0.0" />
+  <Identity Name="26047DonalLally.PokemonGPS" Publisher="CN=6911A294-2F8C-4B9E-B9A9-1F35C7489446" Version="1.1.0.1" />
   <Properties>
-    <DisplayName>GPSPokemon</DisplayName>
-    <PublisherDisplayName>Donal</PublisherDisplayName>
+    <DisplayName>Pokemon GPS</DisplayName>
+    <PublisherDisplayName>Donal Lally</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GPSPokemon.App">
-      <m2:VisualElements DisplayName="GPSPokemon" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="GPSPokemon" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="Pokemon GPS" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="GPSPokemon" ForegroundText="light" BackgroundColor="#464646">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
       </m2:VisualElements>
     </Application>

@@ -99,7 +99,6 @@ namespace GPSPokemon
                     Geoposition position = args.Position;
                     LatitudeValue.Text = position.Coordinate.Latitude.ToString();
                     LongitudeValue.Text = position.Coordinate.Longitude.ToString();
-                    AccuracyValue.Text = position.Coordinate.Accuracy.ToString();
                     myX = position.Coordinate.Longitude;
                     myY = position.Coordinate.Latitude;
                 });
@@ -130,8 +129,7 @@ namespace GPSPokemon
 
             LatitudeValue.Text = position.Coordinate.Latitude.ToString();
             LongitudeValue.Text = position.Coordinate.Longitude.ToString();
-            AccuracyValue.Text = position.Coordinate.Accuracy.ToString();
-
+            
             checkLocation();
         }
 
